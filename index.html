@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>淘宝</title>
+		<!-- 马秀杰 -->
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="libs/jquerymobile/jquery.mobile-1.4.5.min.css">
+		<script type="text/javascript" src="libs/jquery/jquery-1.12.4.min.js"></script>
+		<script>
+		    $(document).bind('mobileinit',function(){
+		        $.mobile.pushStateEnabled = false;
+		    });
+		        </script>
+		<script type="text/javascript" src="libs/jquerymobile/jquery.mobile-1.4.5.min.js"></script>
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<link href="css/advertising.css" rel="stylesheet" type="text/css" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/lb.css">
+		<link rel="stylesheet" type="text/css" href="css/kuang.css">
+		<script src="js/myjs.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/xh.css">
+		<link rel="stylesheet" type="text/css" href="css/toolbar.css">
+	</head>
+	<style type="text/css">
+		body, html {
+		    height: 100%;
+		    background-color: #f4f4f4;
+			overflow-y: auto;
+		}
+		*{
+		    margin: 0;
+		    padding: 0;
+		    box-sizing: border-box;
+		    outline: 0;
+		    -webkit-tap-highlight-color: transparent;
+		}
+		.header {
+		    background: #ff852a;
+		    color: white;
+			position: fixed;
+			left: 0px;
+			top: 0px;
+			z-index: 1000;
+			width: 100%;
+		}
+		.header-bd{
+			background: url(img/tb.png);
+			width: 100%;
+			padding-right: 9px;
+			padding-left: 42px;
+			padding-top: 6px;
+			padding-bottom: 6px;
+			background-size: 27px 20px;
+			background-repeat: no-repeat;
+			background-position: 9px center;
+		}
+		.header-bd .placeholder {
+		    display: block;
+		    font-size: 0px;
+		    background-color: rgb(255, 78, 34);
+		    text-align: center;
+		    border-radius: 4px;
+		}
+		.header-bd .placeholder .text {
+		    height: 25px;
+		    line-height: 25px;
+		    font-size: 13px;
+		    display: inline-block;
+		    color: rgb(240, 224, 220);
+		}
+		.header-bd .placeholder .text::before {
+		    font-size: 15px;
+		    display: inline-block;
+		    color: rgb(255, 255, 255);
+		    margin-right: 5px;
+		}
+		
+	</style>
+	<body>
+		<div data-role="page" id="home">
+			<header class="header">
+				<div class="header-bd">
+					<a class="placeholder">
+						<span class="text fa fa-search">寻找宝贝店铺</span>
+					</a>
+				</div>
+			</header>
+			<div class="slide">
+				<ul id="list">
+					<li><a href="#"><img src="img/banner1.jpg" /></a></li>
+					<li><a href="#"><img src="img/banner2.jpg" /></a></li>
+					<li><a href="#"><img src="img/banner3.jpg" /></a></li>
+					<li><a href="#"><img src="img/banner4.jpg" /></a></li>
+					<li><a href="#"><img src="img/banner5.jpg" /></a></li>
+					<li><a href="#"><img src="img/banner6.jpg" /></a></li>
+					<li><a href="#"><img src="img/banner7.jpg" /></a></li>
+					<li><a href="#"><img src="img/banner8.jpg" /></a></li>
+				</ul>
+				<ul id="num">
+					<li class="active">1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+					<li>7</li>
+					<li>8</li>
+				</ul>
+			</div>
+			<div id="kuang">
+					<div class="shu1">
+						<a class="sc1" href="#">
+							<img class="sc3" src="img/icon1.png">
+							<p class="sc4">天猫新品</p></a>
+						<a class="sc2" href="#">
+							<img class="sc3" src="img/icon11.png">
+							<p class="sc4 wpx">充值中心</p></a>
+					</div>
+					<div class="shu1">
+						<a class="sc1" href="#">
+							<img class="sc3" src="img/icon2.png">
+							<p class="sc4">今日爆款</p></a>
+						<a class="sc2" href="#">
+							<img class="sc3" src="img/icon12.png">
+							<p class="sc4 wpx">机票酒店</p></a>
+					</div>
+					<div class="shu1">
+						<a class="sc1" href="#">
+							<img class="sc3" src="img/icon3.png">
+							<p class="sc4">天猫国际</p></a>
+						<a class="sc2" href="#">
+							<img class="sc3" src="img/icon13.png">
+							<p class="sc4 wpx">金币庄园</p></a>
+					</div>
+					<div class="shu1">
+						<a class="sc1" href="#">
+							<img class="sc3" src="img/icon4.png">
+							<p class="sc4">饿了么</p></a>
+						<a class="sc2" href="#">
+							<img class="sc3" src="img/icon14.png">
+							<p class="sc4 wpx">阿里拍卖</p></a>
+					</div>
+					<div class="shu1">
+						<a class="sc1" href="#">
+							<img class="sc3" src="img/icon5.png">
+							<p class="sc4">天猫超市</p></a>
+						<a class="sc2" href="#">
+							<img class="sc3" src="img/icon15.png">
+							<p class="sc4 wpx">淘宝吃货</p></a>
+					</div>
+					<div class="shu1">
+						<a class="sc1" href="#">
+							<img class="sc3" src="img/icon6.png">
+							<p class="sc4">分类</p></a>
+						<a class="sc2" href="#">
+							<img class="sc3" src="img/icon16.png">
+							<p class="sc4 wpx">&nbsp;&nbsp;&nbsp;闲鱼</p></a>
+					</div>
+					<div class="shu1">
+						<a class="sc1" href="#">
+							<img class="sc3" src="img/icon7.png">
+							<p class="sc4">天猫美食</p></a>
+						<a class="sc2" href="#">
+							<img class="sc3" src="img/icon17.png">
+							<p class="sc4 wpx">会员中心</p></a>
+					</div>
+					<div class="shu1">
+						<a class="sc1" href="#">
+							<img class="sc3" src="img/icon8.png">
+							<p class="sc4">阿里健康</p></a>
+						<a class="sc2" href="#">
+							<img class="sc3" src="img/icon18.png">
+							<p class="sc4 wpx">造点新货</p></a>
+					</div>
+					<div class="shu1">
+						<a class="sc1" href="#">
+							<img class="sc3" src="img/icon9.png">
+							<p class="sc4">口碑生活</p></a>
+						<a class="sc2" href="#">
+							<img class="sc3" src="img/icon19.png">
+							<p class="sc4 wpx">会员店</p></a>
+					</div>
+					<div class="shu1">
+						<a class="sc1" href="#">
+							<img class="sc3" src="img/icon10.png">
+							<p class="sc4">土货鲜食</p></a>
+					</div>
+				</div>
+				<!-- 你可能还喜欢 -->
+				<div class="xhd">
+					<div>
+						<div class="recommend-container">
+							<div class="recommend-hd">
+								<img src="img/xh.png" class="recommend-hd-bg">
+							</div>
+							<div class="recommend-item">
+								<a class="recommend-img-wrapper triggerClick" data-index="0" href="#">
+								<img class="recommend-img lazyload" src="img/xh1.jpg">
+								</a>
+								<a class="recommend-info triggerClick" data-index="0" href="#">
+								<div class="recommend-title">
+									<span class="recommend-title-p">拖把挂钩免打孔强力无痕粘钩拖布收纳浴室吸盘壁挂拖把夹扫把挂架</span>
+								</div>
+								<div class="recommend-price-box">
+									<span class="recommend-sign recommend-h">￥</span>
+									<span class="recommend-price">19.99</span>
+									<span class="recommend-payed">4407人已购买</span>
+								</div>
+								</a>
+							</div>
+							<div class="recommend-item">
+								<a class="recommend-img-wrapper triggerClick" data-index="1" href="#">
+								<img class="recommend-img lazyload" src="img/xh2.jpg">
+								</a>
+								<a class="recommend-info triggerClick" data-index="1" href="#">
+								<div class="recommend-title">
+									<span class="recommend-title-p">加厚仿木纹 衣柜子门壁橱旧家具翻新贴纸 pvc自粘墙纸 防水即时贴</span>
+								</div>
+								<div class="recommend-price-box">
+									<span class="recommend-sign recommend-h">￥</span>
+									<span class="recommend-price">18.81</span>
+									<span class="recommend-payed">1115人已购买</span>
+								</div>
+								</a>
+							</div>
+							<div class="recommend-item">
+								<a class="recommend-img-wrapper triggerClick" data-index="2" href="#">
+								<img class="recommend-img lazyload" src="img/xh3.jpg">
+								</a>
+								<a class="recommend-info triggerClick" data-index="2" href="#">
+								<div class="recommend-title">
+									<span class="recommend-title-p">玻璃小花瓶彩色小花插餐桌台面小花器欧式简约小花瓶创意花瓶摆件</span>
+								</div>
+								<div class="recommend-price-box">
+									<span class="recommend-sign recommend-h">￥</span>
+									<span class="recommend-price">25</span>
+									<span class="recommend-payed">148人已购买</span>
+								</div>
+								</a>
+							</div>
+							<div class="recommend-item">
+								<a class="recommend-img-wrapper triggerClick" data-index="3" href="#">
+								<img class="recommend-img lazyload" src="img/xh4.jpg">
+								</a>
+								<a class="recommend-info triggerClick" data-index="3" href="#">
+								<div class="recommend-title">
+									<span class="recommend-title-p">ins北欧实木壁挂衣杆展示架天然原生态树枝挂衣架服装店悬挂货架</span>
+								</div>
+								<div class="recommend-price-box">
+									<span class="recommend-sign recommend-h">￥</span>
+									<span class="recommend-price">60</span>
+									<span class="recommend-payed">13人已购买</span>
+								</div>
+								</a>
+							</div>
+							<div class="recommend-item">
+								<a class="recommend-img-wrapper triggerClick" data-index="4" href="#">
+								<img class="recommend-img lazyload" src="img/xh5.jpg">
+								</a>
+								<a class="recommend-info triggerClick" data-index="4" href="#">
+								<div class="recommend-title">
+									<span class="recommend-title-p">美式铁艺实木多层落地式客厅卧室收纳置物架搁板书架室内装饰花架</span>
+								</div>
+								<div class="recommend-price-box">
+									<span class="recommend-sign recommend-h">￥</span>
+									<span class="recommend-price">436.8</span>
+									<span class="recommend-payed">38人已购买</span>
+								</div>
+								</a>
+							</div>
+							<div class="recommend-item">
+								<a class="recommend-img-wrapper triggerClick" data-index="5" href="#">
+								<img class="recommend-img lazyload" src="img/xh6.jpg">
+								</a>
+								<a class="recommend-info triggerClick" data-index="5" href="#">
+								<div class="recommend-title">
+									<span class="recommend-title-p">妙home 创意铁艺磁性收纳架冰箱侧壁餐巾挂架厨房免安装置物架</span>
+								</div>
+								<div class="recommend-price-box">
+									<span class="recommend-sign recommend-h">￥</span>
+									<span class="recommend-price">56.88</span>
+									<span class="recommend-payed">866人已购买</span>
+								</div>
+								</a>
+							</div>
+							<div class="recommend-item">
+								<a class="recommend-img-wrapper triggerClick" data-index="6" href="#">
+								<img class="recommend-img lazyload" src="img/xh7.jpg">
+								</a>
+								<a class="recommend-info triggerClick" data-index="6" href="#">
+								<div class="recommend-title">
+									<span class="recommend-title-p">创意实木小凳子恐龙凳子储物矮凳换鞋凳沙发凳设计师家具收纳脚凳</span>
+								</div>
+								<div class="recommend-price-box">
+									<span class="recommend-sign recommend-h">￥</span>
+									<span class="recommend-price">217.08</span>
+									<span class="recommend-payed">41人已购买</span>
+								</div>
+								</a>
+							</div>
+							<div class="recommend-item">
+								<a class="recommend-img-wrapper triggerClick" data-index="7" href="#">
+								<img class="recommend-img lazyload" src="img/xh8.jpg">
+								</a>
+								<a class="recommend-info triggerClick" data-index="7" href="#">
+								<div class="recommend-title">
+									<span class="recommend-title-p">欧式玻璃花瓶摆件大号客厅餐桌插花花器创意摆件家居装饰品干花瓶</span>
+								</div>
+								<div class="recommend-price-box">
+									<span class="recommend-sign recommend-h">￥</span>
+									<span class="recommend-price">99</span>
+									<span class="recommend-payed">23人已购买</span>
+								</div>
+								</a>
+							</div>
+							<div class="recommend-item">
+								<a class="recommend-img-wrapper triggerClick" data-index="8" href="#">
+								<img class="recommend-img lazyload" src="img/xh9.jpg">
+								</a>
+								<a class="recommend-info triggerClick" data-index="8" href="#">
+								<div class="recommend-title">
+									<span class="recommend-title-p">棣 手工实木烛台 做旧自然系装饰艺术摆件美式乡村民宿创意软装</span>
+								</div>
+								<div class="recommend-price-box">
+									<span class="recommend-sign recommend-h">￥</span>
+									<span class="recommend-price">19.9</span>
+									<span class="recommend-payed">34人已购买</span>
+								</div>
+								</a>
+							</div>
+							<div class="recommend-item">
+								<a class="recommend-img-wrapper triggerClick" data-index="9" href="#">
+								<img class="recommend-img lazyload" src="img/xh10.jpg">
+								</a>
+								<a class="recommend-info triggerClick" data-index="9" href="#">
+								<div class="recommend-title">
+									<span class="recommend-title-p">现货/集木室物所/「梨诗」设计师黄铜色非天然大理石纹搁板置物架</span>
+								</div>
+								<div class="recommend-price-box">
+									<span class="recommend-sign recommend-h">￥</span>
+									<span class="recommend-price">299</span>
+									<span class="recommend-payed">27人已购买</span>
+								</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 喜欢 -->
+				<div class="tb-toolbar-container" data-spm="toolbar">
+					<span class="tab">
+						<span class="fa fa-home "></span>
+							<p class="text">首页</p>
+					</span><span class="tab">
+						<span class="fa fa-shopping-cart"></span>
+							<p class="text">购物车</p>
+					</span><span class="tab">
+						<span class="fa fa-list-alt"></span>
+							<p class="text">订单列表</p>
+					</span><span class="tab">
+						<span class="fa fa-user"></span>
+							<p class="text">我的淘宝</p>
+					</span>
+				</div>
+		</div>
+	</body>
+</html>
+<!-- 马秀杰 -->

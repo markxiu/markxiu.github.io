@@ -1,0 +1,65 @@
+#kuang{
+	display: flex;
+	flex-direction: row;
+	height: 156px;
+	width: 100%;
+	overflow-x: auto;
+	background: rgb(255, 255, 255);
+}
+#kuang img{
+	height: 48px;
+	width: 61px;
+	border-radius:5px;
+}
+#kuang div{
+	width: 780px;
+}
+#kuang h2{
+	font-size: 10px;
+}
+.shu1 {
+    margin-left: 11.5px;
+}
+.sc1 {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 67px;
+    width: 61px;
+    margin-top: 3px;
+}
+.sc1 div {
+    display: block;
+}
+.sc2 {
+    height: 48px;
+    width: 61px;
+}
+.sc3{
+	height: 48px;
+	width: 61px;
+}
+.sc4 {
+    font-size: 11px;
+    line-height: 15px;
+    color: rgb(102, 102, 102);
+    margin-top: 4px;
+}
+a {
+    text-decoration: none;
+}
+.wpx{
+	width: 50px;
+	margin: 0 auto;
+}
+/* ::-webkit-scrollbar {display:none} */
+::-webkit-scrollbar {
+    height: 3px;
+    background-color: rgb(212, 216, 222);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 109, 42);
+}
+/* 马秀杰 */

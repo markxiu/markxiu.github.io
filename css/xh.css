@@ -1,0 +1,119 @@
+.xhd {
+	height: 1450px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.xhd .recommend-container {
+    width: 100%;
+}
+.recommend-container {
+    display: -webkit-flex;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    place-content: flex-start space-between;
+    flex-shrink: 0;
+    overflow: hidden;
+    -webkit-box-pack: justify;
+    -webkit-box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 7.5px;
+    background: #f2f2f2;
+    padding-bottom: 12px;
+}
+.recommend-hd {
+    padding: 12px 0;
+    width: 100%;
+    text-align: center;
+}
+.recommend-hd-bg {
+    width: 161px;
+    height: 19.000000000000004px;
+}
+.recommend-item {
+    height: 260px;
+    position: relative;
+    width: 170.99999999999997px;
+    box-sizing: border-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-shrink: 0;
+    background: #fff;
+    margin-top: 9px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-left: 4.5px;
+    margin-right: 4.5px;
+}
+.recommend-img-wrapper {
+    -webkit-box-align: center;
+    height: 170.99999999999997px;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+.recommend-img {
+    width: 170.99999999999997px;
+    height: 170.99999999999997px;
+}
+.recommend-info {
+    padding-left: 10px;
+    padding-right: 9px;
+    height: 94.00000000000001px;
+    text-decoration: none;
+}
+.recommend-title {
+    margin-top: 11.499999999999998px;
+    height: 37px;
+    position: relative;
+    overflow: hidden;
+    line-height: 18.5px;
+    text-overflow: ellipsis;
+    min-height: 0;
+}
+.recommend-title-p {
+    font-size: 13.000000000000004px;
+    color: #333333;
+}
+.recommend-price-box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    margin-top: 11px;
+    height: 20px;
+    line-height: 20px;
+}
+.recommend-sign {
+    font-size: 11px;
+    margin-left: getUnit(-6);
+    margin-bottom: getUnit(-1);
+}
+.recommend-h {
+    color: #ff5500;
+}
+.recommend-price {
+    font-size: 14px;
+    line-height: 16.000000000000004px;
+    color: #ff5500;
+}
+.recommend-payed {
+    font-size: 11px;
+    color: #999999;
+    margin-top: 2.0000000000000004px;
+}
+/* 马秀杰 */
